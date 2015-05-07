@@ -34,5 +34,11 @@ namespace AnalyDecisionSystem
         {
             toolStripStatusLabel2.Text = DateTime.Now.ToString();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form4 Form = new Form4();
+            Form.ShowDialog();
+        }
     }
 }
