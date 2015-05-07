@@ -15,16 +15,13 @@ namespace AnalyDecisionSystem
         public Form1()
         {
             InitializeComponent();
+            toolStripStatusLabel2.Text = DateTime.Now.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            Form3 Form = new Form3();
+            Form.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,9 +30,9 @@ namespace AnalyDecisionSystem
             Form.ShowDialog();
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-
+            toolStripStatusLabel2.Text = DateTime.Now.ToString();
         }
     }
 }
